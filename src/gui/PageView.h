@@ -95,7 +95,7 @@ public:
      * else the time in Seconds
      */
     int getLastVisibleTime();
-    TextEditor* getTextEditor();
+    TextEditor* getTextEditor() const;
 
     /**
      * Returns a reference to the XojPage belonging to

@@ -824,7 +824,7 @@ auto XojPageView::getBufferPixels() -> int {
 
 auto XojPageView::getSelectionColor() -> GtkColorWrapper { return settings->getSelectionColor(); }
 
-auto XojPageView::getTextEditor() -> TextEditor* { return textEditor; }
+auto XojPageView::getTextEditor() const -> TextEditor* { return textEditor; }
 
 auto XojPageView::getX() const -> int { return this->dispX; }
 

@@ -66,7 +66,7 @@ public:
     void setMaximized(bool maximized);
     bool isMaximized() const;
 
-    XournalView* getXournal();
+    XournalView* getXournal() const;
 
     void setSidebarVisible(bool visible);
     void setToolbarVisible(bool visible);

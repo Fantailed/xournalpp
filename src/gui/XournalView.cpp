@@ -540,7 +540,7 @@ void XournalView::pageDeleted(size_t page) {
     control->getScrollHandler()->scrollToPage(currentPage);
 }
 
-auto XournalView::getTextEditor() -> TextEditor* {
+auto XournalView::getTextEditor() const -> TextEditor* {
     for (auto&& page: viewPages) {
         if (page->getTextEditor()) {
             return page->getTextEditor();

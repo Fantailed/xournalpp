@@ -517,7 +517,7 @@ void MainWindow::setMaximized(bool maximized) { this->maximized = maximized; }
 
 auto MainWindow::isMaximized() const -> bool { return this->maximized; }
 
-auto MainWindow::getXournal() -> XournalView* { return xournal; }
+auto MainWindow::getXournal() const -> XournalView* { return xournal; }
 
 auto MainWindow::windowStateEventCallback(GtkWidget* window, GdkEventWindowState* event, MainWindow* win) -> bool {
     win->setMaximized(gtk_window_is_maximized(GTK_WINDOW(window)));

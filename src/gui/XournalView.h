@@ -89,7 +89,7 @@ public:
     void deleteSelection(EditSelection* sel = nullptr);
     void repaintSelection(bool evenWithoutSelection = false);
 
-    TextEditor* getTextEditor();
+    TextEditor* getTextEditor() const;
     std::vector<XojPageView*> const& getViewPages() const;
 
     Control* getControl();

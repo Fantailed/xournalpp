@@ -44,7 +44,7 @@ auto GladeGui::get(const string& name) -> GtkWidget* {
     return w;
 }
 
-auto GladeGui::getWindow() -> GtkWidget* { return this->window; }
+auto GladeGui::getWindow() const -> GtkWidget* { return this->window; }
 
 auto GladeGui::getGladeSearchPath() -> GladeSearchpath* { return this->gladeSearchPath; }
 

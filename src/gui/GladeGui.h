@@ -34,7 +34,7 @@ public:
 
     void setThemePath(string themePath);
 
-    GtkWidget* getWindow();
+    GtkWidget* getWindow() const;
     GladeSearchpath* getGladeSearchPath();
 
     GtkBuilder* getBuilder();

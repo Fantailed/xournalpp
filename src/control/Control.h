@@ -215,13 +215,13 @@ public:
 
     void setFill(bool fill);
 
-    TextEditor* getTextEditor();
+    TextEditor* getTextEditor() const;
 
-    GladeSearchpath* getGladeSearchPath();
+    GladeSearchpath* getGladeSearchPath() const;
 
     void disableSidebarTmp(bool disabled);
 
-    XournalScheduler* getScheduler();
+    XournalScheduler* getScheduler() const;
 
     void block(const string& name);
     void unblock();
@@ -231,26 +231,26 @@ public:
     void deleteLastAutosaveFile(fs::path newAutosaveFile);
     void setClipboardHandlerSelection(EditSelection* selection);
 
-    MetadataManager* getMetadataManager();
-    Settings* getSettings();
-    ToolHandler* getToolHandler();
-    ZoomControl* getZoomControl();
-    Document* getDocument();
-    UndoRedoHandler* getUndoRedoHandler();
-    MainWindow* getWindow();
+    MetadataManager* getMetadataManager() const;
+    Settings* getSettings() const;
+    ToolHandler* getToolHandler() const;
+    ZoomControl* getZoomControl() const;
+    Document* getDocument() const;
+    UndoRedoHandler* getUndoRedoHandler() const;
+    MainWindow* getWindow() const;
     GtkWindow* getGtkWindow() const;
-    RecentManager* getRecentManager();
-    ScrollHandler* getScrollHandler();
-    PageRef getCurrentPage();
-    size_t getCurrentPageNo();
-    XournalppCursor* getCursor();
-    Sidebar* getSidebar();
-    SearchBar* getSearchBar();
-    AudioController* getAudioController();
-    PageTypeHandler* getPageTypes();
-    PageTypeMenu* getNewPageType();
-    PageBackgroundChangeController* getPageBackgroundChangeController();
-    LayerController* getLayerController();
+    RecentManager* getRecentManager() const;
+    ScrollHandler* getScrollHandler() const;
+    PageRef getCurrentPage() const;
+    size_t getCurrentPageNo() const;
+    XournalppCursor* getCursor() const;
+    Sidebar* getSidebar() const;
+    SearchBar* getSearchBar() const;
+    AudioController* getAudioController() const;
+    PageTypeHandler* getPageTypes() const;
+    PageTypeMenu* getNewPageType() const;
+    PageBackgroundChangeController* getPageBackgroundChangeController() const;
+    LayerController* getLayerController() const;
 
 
     bool copy();

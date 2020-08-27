@@ -39,7 +39,7 @@ public:
     bool readPdf(const fs::path& filename, bool initPages, bool attachToDocument, gpointer data = nullptr,
                  gsize length = 0);
 
-    size_t getPageCount();
+    size_t getPageCount() const;
     size_t getPdfPageCount();
     XojPdfPageSPtr getPdfPage(size_t page);
     XojPdfDocument& getPdfDocument();
@@ -48,7 +48,7 @@ public:
     void addPage(const PageRef& p);
     template <class InputIter>
     void addPages(InputIter first, InputIter last);
-    PageRef getPage(size_t page);
+    PageRef getPage(size_t page) const;
     void deletePage(size_t pNr);
 
     static void setPageSize(PageRef p, double width, double height);

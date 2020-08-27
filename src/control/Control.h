@@ -241,7 +241,7 @@ public:
     GtkWindow* getGtkWindow() const;
     RecentManager* getRecentManager() const;
     ScrollHandler* getScrollHandler() const;
-    PageRef getCurrentPage() const;
+    PageRef getCurrentPage();                   // Not const because of mutex
     size_t getCurrentPageNo() const;
     XournalppCursor* getCursor() const;
     Sidebar* getSidebar() const;

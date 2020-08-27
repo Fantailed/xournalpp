@@ -98,7 +98,7 @@ void Document::clearDocument(bool destroy) {
 /**
  * Returns the pageCount, this call don't need to be synchronized (if it's not critical, you may get wrong data)
  */
-auto Document::getPageCount() -> size_t { return this->pages.size(); }
+auto Document::getPageCount() const -> size_t { return this->pages.size(); }
 
 auto Document::getPdfPageCount() -> size_t { return pdfDocument.getPageCount(); }
 
@@ -377,7 +377,7 @@ auto Document::indexOf(const PageRef& page) -> size_t {
     return npos;
 }
 
-auto Document::getPage(size_t page) -> PageRef {
+auto Document::getPage(size_t page) const -> PageRef {
     if (getPageCount() <= page) {
         return nullptr;
     }
